@@ -1,0 +1,57 @@
+<template>
+  <div class="bg">
+    <div class="box">
+      <el-card class="box-card">
+        <template #header>
+          <div class="clearfix">
+            <span>卡片名称</span>
+            <el-button style="float: right; padding: 3px 0" type="text"
+              >操作按钮</el-button
+            >
+          </div>
+        </template>
+        <div v-for="o in 4" :key="o" class="text item">
+          {{ "列表内容 " + o }}
+        </div>
+      </el-card>
+    </div>
+  </div>
+</template>
+
+<script lang="ts">
+import { defineComponent, ref } from "vue";
+// import api from '@/http/api'
+export default defineComponent({
+  name: "",
+  props: {},
+  components: {},
+  setup() {
+    //    let data = ref<any>()
+    //    api.banners().then((res: any)=>{
+    //    data = res.data
+    //    console.log(data)
+    //  })
+
+    return {
+      //  data
+    };
+  },
+});
+</script>
+
+<style scoped lang="scss">
+.bg {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(http://157.122.54.189:9095/assets/images/th03.jfif);
+}
+.box {
+  width: 400px;
+  height: 300px;
+  background: white;
+  border: 1px solid #ccc;
+}
+</style>
