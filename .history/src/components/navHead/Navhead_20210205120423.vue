@@ -109,7 +109,7 @@ export default defineComponent({
       router,
       // flag,
       goPersonal,
-      user
+      
     };
   },
 });

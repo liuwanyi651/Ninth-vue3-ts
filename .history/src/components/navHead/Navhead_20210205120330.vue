@@ -61,7 +61,7 @@ export default defineComponent({
   setup() {
     // 用计算属性 拿到user 刷新依然会拿到
     store.commit("setuser")
-    const user = computed(()=>{
+    const seruser = computed(()=>{
       return store.state.user 
     })
     // 定义数组
@@ -109,7 +109,7 @@ export default defineComponent({
       router,
       // flag,
       goPersonal,
-      user
+      user,
     };
   },
 });
