@@ -14,7 +14,7 @@
         {{ item.name }}
       </div>
     </div>
-    <!--判断登录及未登录--> 
+    <!--判断登录及未登录-->
     <div>
       <!--如果登录的情况下-->
       <div v-if="user" class="ul c-p login">
